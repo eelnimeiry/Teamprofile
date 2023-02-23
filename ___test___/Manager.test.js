@@ -1,19 +1,19 @@
-import Manager from "../lib/intern";
+const Manager = require("../lib/Manager");
 
 test("Can create an office number.", () => {
-    const testOfficeNumber = "10";
+    const testOfficeNumber = 11;
     const employeeInstance = new Manager("El", 11, "elsadekelnimeriy@gmail.com", testOfficeNumber);
     expect(employeeInstance.officeNumberl).toBe(testOfficeNumber);
 });
 
-test("Testing getGithub will retunr office number.", () => {
-    const testSchool = "11";
+test("Testing officeNumber will return office number.", () => {
+    const testOfficeNumber = 11;
     const employeeInstance = new Manager("El", 11, "elsadekelnimeriy@gmail.com", testOfficeNumber);
-    expect(employeeInstance.getSchool()).toBe(testSchool);
+    expect(employeeInstance.getOficceNumber()).toBe(testOfficeNumber);
 })
 
 test("Testing role.", () => {
-    const retunValue = "Manager";
+    const returnValue = "Manager";
     const employeeInstance = new Manager("El", 11, "elsadekelnimeriy@gmail.com", 11);
-    expect(employeeInstance.getRole()).toBe(retunValue);
+    expect(employeeInstance.getRole()).toBe(returnValue);
 });

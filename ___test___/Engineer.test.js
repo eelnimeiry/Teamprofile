@@ -1,4 +1,4 @@
-import Engineer from "../lib/Engineer";
+const Engineer = require("../lib/Engineer");
 
 test("Can create a github.", () => {
     const testGithub = "eelnimeiry";
@@ -6,14 +6,14 @@ test("Can create a github.", () => {
     expect(employeeInstance.github).toBe(testGithub);
 });
 
-test("Testing getGithub will retunr github.", () => {
+test("Testing getGithub will return github.", () => {
     const testGithub = "eelnimeiry";
     const employeeInstance = new Engineer("El", 11, "elsadekelnimeriy@gmail.com", testGithub);
     expect(employeeInstance.getGithub()).toBe(testGithub);
 })
 
 test("Testing role.", () => {
-    const retunValue = "Engineer";
+    const returnValue = "Engineer";
     const employeeInstance = new Engineer("El", 11, "elsadekelnimeriy@gmail.com", "eelnimeiry");
-    expect(employeeInstance.getGithub()).toBe(retunValue);
+    expect(employeeInstance.getRole()).toBe(returnValue);
 });

@@ -1,19 +1,19 @@
-import Intern from "../lib/intern";
+const Intern = require("../lib/Intern");
 
 test("Can create school", () => {
     const testSchool = "School Name";
     const employeeInstance = new Intern("El", 11, "elsadekelnimeriy@gmail.com", testSchool);
-    expect(employeeInstance.School).toBe(testSchool);
+    expect(employeeInstance.school).toBe(testSchool);
 });
 
 test("Testing officeNumber will retunr office number.", () => {
     const testSchool = "School Name";
-    const employeeInstance = new Intern("El", 11, "elsadekelnimeriy@gmail.com", testScholl);
+    const employeeInstance = new Intern("El", 11, "elsadekelnimeriy@gmail.com", testSchool);
     expect(employeeInstance.getSchool()).toBe(testSchool);
 })
 
 test("Testing role.", () => {
-    const retunValue = "Intern";
+    const returnValue = "intern";
     const employeeInstance = new Intern("El", 11, "elsadekelnimeriy@gmail.com", "School Name");
-    expect(employeeInstance.getRole()).toBe(retunValue);
+    expect(employeeInstance.getRole()).toBe(returnValue);
 });

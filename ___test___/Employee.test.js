@@ -1,6 +1,6 @@
-import Employee from "../lib/Employee";
+const Employee = require("../lib/Employee");
 
-Text("Can create a new employee.", () => {
+test("Can create a new employee.", () => {
     const employeeInstance = new Employee();
     expect(typeof(employeeInstance)).toBe("object");
 })
@@ -41,7 +41,7 @@ test("Can test email through getEmail method.", () => {
 })
 
 test("Testing role.",() => {
-    const retunValue = "Employee";
+    const returnValue = "Employee";
     const employeeInstance = new Employee("El", 11, "elsadekelnimeriy@gmail.com");
     expect(employeeInstance.getRole()).toBe(returnValue);
 })
