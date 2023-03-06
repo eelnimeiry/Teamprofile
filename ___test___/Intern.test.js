@@ -6,7 +6,7 @@ test("Can create school", () => {
     expect(employeeInstance.school).toBe(testSchool);
 });
 
-test("Testing officeNumber will retunr office number.", () => {
+test("Testing officeNumber will return office number.", () => {
     const testSchool = "School Name";
     const employeeInstance = new Intern("El", 11, "elsadekelnimeriy@gmail.com", testSchool);
     expect(employeeInstance.getSchool()).toBe(testSchool);

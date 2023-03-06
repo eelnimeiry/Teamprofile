@@ -98,3 +98,5 @@ function createInternHTML(internDB){
   }
   return intern
 }
+
+module.exports = createHTML

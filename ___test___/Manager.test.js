@@ -3,13 +3,13 @@ const Manager = require("../lib/Manager");
 test("Can create an office number.", () => {
     const testOfficeNumber = 11;
     const employeeInstance = new Manager("El", 11, "elsadekelnimeriy@gmail.com", testOfficeNumber);
-    expect(employeeInstance.officeNumberl).toBe(testOfficeNumber);
+    expect(employeeInstance.officeNumber).toBe(testOfficeNumber);
 });
 
 test("Testing officeNumber will return office number.", () => {
     const testOfficeNumber = 11;
     const employeeInstance = new Manager("El", 11, "elsadekelnimeriy@gmail.com", testOfficeNumber);
-    expect(employeeInstance.getOficceNumber()).toBe(testOfficeNumber);
+    expect(employeeInstance.getOfficeNumber()).toBe(testOfficeNumber);
 })
 
 test("Testing role.", () => {
