@@ -13,12 +13,12 @@ function addManager() {
         {
             type: "input",
             name: "name",
-            message: "Please enter Team Manager’s name:",
+            message: "Please enter Team Manager's name:",
         },
         {
             type: "input",
             name: "id",
-            message: "Please enter Team Manager’s id:",
+            message: "Please enter Team Manager's id:",
         },
         {
             type: "input",
@@ -29,7 +29,7 @@ function addManager() {
         {
             type: "input",
             name: "officenumber",
-            message: "Please enter Team Manager’s officenumber:",
+            message: "Please enter Team Manager's officenumber:",
         }
     ]).then(({ name, id, email, officenumber }) => {
         const newHireManager = new Manager(name, id, email, officenumber)
@@ -43,7 +43,7 @@ function hireTeamMembers() {
             type: "list",
             message: "Do you like add team members?",
             name: "continue",
-            choices: ["Add Engineer”, “Add Intern”, “Generate Team HTML & Exit"]
+            choices: ["Add Engineer", "Add Intern", "Generate Team HTML & Exit"]
         }
     ]).then(response => {
         switch (response.continue) {
@@ -63,22 +63,22 @@ function addEngineer() {
         {
             type: "input",
             name: "name",
-            message: "Please enter Team Enginner’s name: ",
+            message: "Please enter Team Enginner' s name: ",
         },
         {
             type: "input",
             name: "id",
-            message: "Please enter Team Engineer’s id: ",
+            message: "Please enter Team Engineer's id: ",
         },
         {
             type: "input",
             name: "email",
-            message: "Please enter Team Engineer’s email: ",
+            message: "Please enter Team Engineer's email: ",
         },
         {
             type: "input",
             name: "officenumber",
-            message: "Please enter Team Engineer’s github: ",
+            message: "Please enter Team Engineer's github: ",
         }
     ]).then(({ name, id, email, officenumber }) => {
         const newHireEngineer = new Engineer(name, id, email, officenumber)
@@ -91,22 +91,22 @@ function addIntern() {
         {
             type: "input",
             name: "name",
-            message: "Please enter Team Intern’s name: ",
+            message: "Please enter Team Intern's name: ",
         },
         {
             type: "input",
             name: "id",
-            message: "Please enter Team Intern’s id: ",
+            message: "Please enter Team Intern's id: ",
         },
         {
             type: "input",
             name: "email",
-            message: "Please enter Team Intern’s email: ",
+            message: "Please enter Team Intern's email: ",
         },
         {
             type: "input",
             name: "officenumber",
-            message: "Please enter Team Intern’s school name: ",
+            message: "Please enter Team Intern's school name: ",
         }
     ]).then(({ name, id, email, officenumber }) => {
         const newHireIntern = new Intern(name, id, email, officenumber)
