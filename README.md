@@ -6,6 +6,7 @@ This application will generate a team profile HTML webpage using node.js based o
   - [Description](#description)
   - [Table of Contents](#table-of-contents)
   - [Acceptance Criteria](#acceptance-criteria)
+    - [Screenshot](#screenshot)
     - [Screenrecording](#screenrecording)
 ```md
 AS A manager
@@ -33,7 +34,8 @@ WHEN I decide to finish building my team
 THEN I exit the application, and the HTML is generated
 ```
 
-
+### Screenshot
+* [Screenshot](image/Screen%20Shot%202023-03-15%20at%2010.40.08%20PM.png)
 
 ### Screenrecording
 * [Screenrecording](https://drive.google.com/file/d/1ajo8CMUqK8G4xcZlJ-B5OjvP0RPbGJiS/view)
