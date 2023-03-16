@@ -6,7 +6,7 @@ This application will generate a team profile HTML webpage using node.js based o
   - [Description](#description)
   - [Table of Contents](#table-of-contents)
   - [Acceptance Criteria](#acceptance-criteria)
-    - [Video record](#video-record)
+    - [Screenrecording](#screenrecording)
 ```md
 AS A manager
 I WANT to generate a webpage that displays my team’s basic info
@@ -35,8 +35,8 @@ THEN I exit the application, and the HTML is generated
 
 
 
-### Video record 
-* [Videorecord](https://drive.google.com/file/d/1ajo8CMUqK8G4xcZlJ-B5OjvP0RPbGJiS/view)
+### Screenrecording
+* [Screenrecording](https://drive.google.com/file/d/1ajo8CMUqK8G4xcZlJ-B5OjvP0RPbGJiS/view)
 
 
 
